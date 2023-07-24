@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #c19f96; 
+    background-image: url(images/pinkskysk.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color: hotpink;
+}
+
+/* Home */
+
+.detel{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detel h1{
+    font-size: 40px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: purple;
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #cf108c;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .aidaprofile{
+    left: 45%;
+}
+
+/* Gallery */
+
+.gallery{
+    background-image: url(images/space.gif);
+    padding: 50px;
+    margin: auto;
+}
+
+.gallery h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* About Section */
+
+.aboutme{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pinkcity.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#about{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 8;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#pic{
+    display: flex;
+    padding: 20px;
+}
+#pic img{
+    width: 550px;
+    height: 375px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 30px;
+}
+#intro h1{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+/* Education Section */
+
+.myedu{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/daynight.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.edu{
+    padding: 32px;
+    
+}
+#education{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.line{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(255, 190, 124, 0.753) 50%, rgba(255, 255, 255, 0.291) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+} 
+.textbox:hover{
+    background-position: left bottom;
+    color: rgba(0, 0, 0, 0.551);
+    border: none;
+    box-shadow: 0 0 20px rgba(94, 131, 226, 0.814);
+}
+.textbox img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+/* Contact Section */
+
+.contactme{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/toggle.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(255, 197, 160, 0.814) 50%, rgba(255, 255, 255, 0.291) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+} 
+.box:hover{
+    background-position: left bottom;
+    color: rgba(0, 0, 0, 0.54);
+    border: none;
+    box-shadow: 0 0 20px rgba(84, 16, 116, 0.813);
+}
+.box img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
